@@ -15,63 +15,117 @@
 
 <body>
     <form action="">
-        <div class="container">
+        <!-- titre -->
+        <div class="container mb-4">
             <div class="row" name="rangee" id="rangeeTitre1">
                 <div class="col-12">
                     <h1 class="text-center">Formulaire Bancaire</h1>
                 </div>
             </div>
+        </div>
+
+        <!-- formulaire -->
+        <div class="container">
             <div class="row" name="rangee" id="rangeeInfos">
-                <div class="col-12 col-md-6 centrage">
-                    Nom : <span class="spanErreur" id="spanErreurNom">Erreur</span>
+                <div class="col-12 col-md-4 text-center text-md-start text__color--green fw-bold">
+                    Nom :</span>
                 </div>
-                <div class="col-12 col-md-6 centrage">
+                <div class="col-12 col-md-4 text-center">
                     <input type="text" id="inputNom" />
                 </div>
-                <div class="col-12 col-md-6 centrage">
-                    Prénom :
-                    <span class="spanErreur" id="spanErreurPrenom">Erreur</span>
+                <div class="col-12 col-md-4 text-center text-md-start fw-bold">
+                    <span class="spanErreur" id="spanErreurNom">Erreur</span>
                 </div>
-                <div class="col-12 col-md-6 centrage">
+
+                <div class="col-12 col-md-4 text-center text-md-start text__color--green fw-bold">
+                    Prénom :
+                </div>
+                <div class="col-12 col-md-4 text-center">
                     <input type="text" id="inputPrenom" />
                 </div>
-                <div class="col-12 col-md-6 centrage">
-                    Date de naissance :
-                    <span class="spanErreur" id="spanErreurDate">Erreur</span>
+                <div class="col-12 col-md-4 text-center text-md-start fw-bold">
+                    <span class="spanErreur" id="spanErreurPrenom">Erreur</span>
                 </div>
-                <div class="col-12 col-md-6 centrage">
+
+                <div class="col-12 col-md-4 text-center text-md-start text__color--green fw-bold">
+                    Date de naissance :
+                </div>
+                <div class="col-12 col-md-4 text-center">
                     <input type="text" id="inputDate" placeholder="dd/mm/aaaa" />
                 </div>
-                <div class="col-12 col-md-6 centrage">
-                    Email : <span class="spanErreur" id="spanErreurEmail">Erreur</span>
+                <div class="col-12 col-md-4 text-center text-md-start fw-bold">
+                    <span class="spanErreur" id="spanErreurDate">Erreur</span>
                 </div>
-                <div class="col-12 col-md-6 centrage">
+
+                <div class="col-12 col-md-4 text-center text-md-start text__color--green fw-bold">
+                    Email :
+                </div>
+                <div class="col-12 col-md-4 text-center">
                     <input type="text" id="inputEmail" />
                 </div>
-                <div class="col-12 col-md-6 centrage">
-                    Code Confidentiel : <span class="spanErreur" id="spanErreurEmail">Erreur</span>
+                <div class="col-12 col-md-4 text-center text-md-start fw-bold">
+                    <span class="spanErreur" id="spanErreurEmail">Erreur</span>
                 </div>
-                <div class="col-12 col-md-6 centrage">
-                    <input type="text" id="inputCode" />
+
+                <div class="col-12 col-md-4 text-center text-md-start text__color--green fw-bold">
+                    Code Confidentiel :
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <input type="password" id="inputCode" />
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-start fw-bold">
+                    <span class="spanErreur" id="spanErreurCode">Erreur</span>
                 </div>
 
             </div>
-            
 
+            <!-- boutons -->
             <div class="row" name="rangee" id="rangeeBoutons">
-                <div class="col-6 text-end text-md-start">
-                    <button type="button" id="boutonEnvoyer" class="btn btn-primary">
+                <div class="col-md-4 text-center">
+                    <button type="button" id="boutonEnvoyer" class="btn btn-success m-2 border border-white">
                         Confirmer
                     </button>
                 </div>
-                <div class="col-6 text-left">
-                    <button type="button" id="boutonAnnuler" class="btn btn-danger">
+                <div class="col-md-4 text-center">
+                    <button type="button" id="boutonAnnuler" class="btn btn-success m-2 border border-white">
                         Annuler
                     </button>
+                </div>
+                <div class="col-md-4">
                 </div>
             </div>
         </div>
     </form>
+
+    <!-- modale -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- titre -->
+                    <div class="container mb-4">
+                        <div class="row" name="rangee" id="rangeeTitre1">
+                            <div class="col-12">
+                                <h1 class="text-center">Formulaire Bancaire</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p> Vos données sont valides et vont être transmises sur nos serveurs pour traitement.</p>
+                    <p>Nous sommes ravis de vous compter parmi nos nouveaux clients.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" id="btnFermer">Fermer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 
 </html>

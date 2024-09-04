@@ -16,6 +16,10 @@ html * {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Définir l'image de fond et le padding du body */
 body {
     background-image: url("../img/fond.png");
@@ -39,30 +43,33 @@ body {
     }
 }
 
-/* Centre le contenu du div avec l'ID divMaPhoto */
-#divMaPhoto {
-    display: flex;
-    justify-content: center;
-}
-
 /*- - - - - D E C O - - - - -*/
 /* Applique une ombre légère autour de tous les div */
 div {
-    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 0px 1px #000;
 }
+
+.row {
+    background-color: rgba(158, 152, 147, 0.9);
+}
+
 
 /* Utilise la police Protest Guerrilla pour les éléments h2 */
 h1 {
     font-family: "Protest Guerrilla";
-    color: green;
+    color: #006f1c;
     font-size: 2.3em;
     letter-spacing: 0.3em;
+}
+
+.text__color--green{
+    color: #006f1c;
 }
 
 /*- - - - - T E X T E - - - - -*/
 /* Applique la couleur blanche au texte des éléments avec la classe container et aux paragraphes */
 .container,
-p {
+form p {
     color: white;
 }
 
@@ -79,18 +86,6 @@ p {
     border: #16687a solid 3px;
 }
 
-/* Style pour les étiquettes de radio avec la classe radio-label */
-.radio-label {
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
-}
-
-/* Applique une marge à gauche et une couleur blanche au texte des span à l'intérieur des radio-label */
-.radio-label span {
-    margin-left: 5px;
-    color: white;
-}
 
 /*- - - - - E R R O R S - - - - -*/
 /* Style pour les span à l'intérieur du div avec l'ID rangeeInfos */
