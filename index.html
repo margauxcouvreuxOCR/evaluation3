@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Margaux Mazaleyras DWWM 2024">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>III Le Formulaire Bancaire.</title>
+    <script src="js/bootstrap.bundle.js" defer></script>
+    <script src="js/jquery-3.7.1.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <form action="">
+        <div class="container">
+            <div class="row" name="rangee" id="rangeeTitre1">
+                <div class="col-12">
+                    <h1 class="text-center">Formulaire Bancaire</h1>
+                </div>
+            </div>
+            <div class="row" name="rangee" id="rangeeInfos">
+                <div class="col-12 col-md-6 centrage">
+                    Nom : <span class="spanErreur" id="spanErreurNom">Erreur</span>
+                </div>
+                <div class="col-12 col-md-6 centrage">
+                    <input type="text" id="inputNom" />
+                </div>
+                <div class="col-12 col-md-6 centrage">
+                    Prénom :
+                    <span class="spanErreur" id="spanErreurPrenom">Erreur</span>
+                </div>
+                <div class="col-12 col-md-6 centrage">
+                    <input type="text" id="inputPrenom" />
+                </div>
+                <div class="col-12 col-md-6 centrage">
+                    Date de naissance :
+                    <span class="spanErreur" id="spanErreurDate">Erreur</span>
+                </div>
+                <div class="col-12 col-md-6 centrage">
+                    <input type="text" id="inputDate" placeholder="dd/mm/aaaa" />
+                </div>
+                <div class="col-12 col-md-6 centrage">
+                    Email : <span class="spanErreur" id="spanErreurEmail">Erreur</span>
+                </div>
+                <div class="col-12 col-md-6 centrage">
+                    <input type="text" id="inputEmail" />
+                </div>
+                <div class="col-12 col-md-6 centrage">
+                    Code Confidentiel : <span class="spanErreur" id="spanErreurEmail">Erreur</span>
+                </div>
+                <div class="col-12 col-md-6 centrage">
+                    <input type="text" id="inputCode" />
+                </div>
+
+            </div>
+            
+
+            <div class="row" name="rangee" id="rangeeBoutons">
+                <div class="col-6 text-end text-md-start">
+                    <button type="button" id="boutonEnvoyer" class="btn btn-primary">
+                        Confirmer
+                    </button>
+                </div>
+                <div class="col-6 text-left">
+                    <button type="button" id="boutonAnnuler" class="btn btn-danger">
+                        Annuler
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

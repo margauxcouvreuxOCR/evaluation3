@@ -1,0 +1,103 @@
+/*- - - - - F O N T S - - - - -*/
+/* Définir une police personnalisée Protest Guerrilla */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+.protest-guerrilla-regular {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*- - - - - M I S E _ E N _ P A G E - - - - -*/
+/* Applique le box-sizing border-box, annule les marges et les padding pour tous les éléments */
+html * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Définir l'image de fond et le padding du body */
+body {
+    background-image: url("../img/fond.png");
+    background-size: cover;
+    padding: 5px;
+}
+
+/* Applique un padding de 10px aux colonnes de classes col-12 et col-6 */
+.col-12,
+.col-6 {
+    padding: 10px;
+}
+
+/* Centre les éléments avec la classe centrage sur les petits écrans */
+.centrage {
+    display: block;
+
+    @media (max-width: 767.98px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Centre le contenu du div avec l'ID divMaPhoto */
+#divMaPhoto {
+    display: flex;
+    justify-content: center;
+}
+
+/*- - - - - D E C O - - - - -*/
+/* Applique une ombre légère autour de tous les div */
+div {
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.3);
+}
+
+/* Utilise la police Protest Guerrilla pour les éléments h2 */
+h1 {
+    font-family: "Protest Guerrilla";
+    color: green;
+    font-size: 2.3em;
+    letter-spacing: 0.3em;
+}
+
+/*- - - - - T E X T E - - - - -*/
+/* Applique la couleur blanche au texte des éléments avec la classe container et aux paragraphes */
+.container,
+p {
+    color: white;
+}
+
+/*- - - - - F O R M - - - - -*/
+/* Style pour l'input de fichier avec l'ID inputFile */
+#inputFile {
+    background-color: #31d2f2;
+    color: black;
+    border: #31d2f2 solid 3px;
+}
+
+/* Change la bordure de l'input de fichier au survol */
+#inputFile:hover {
+    border: #16687a solid 3px;
+}
+
+/* Style pour les étiquettes de radio avec la classe radio-label */
+.radio-label {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+/* Applique une marge à gauche et une couleur blanche au texte des span à l'intérieur des radio-label */
+.radio-label span {
+    margin-left: 5px;
+    color: white;
+}
+
+/*- - - - - E R R O R S - - - - -*/
+/* Style pour les span à l'intérieur du div avec l'ID rangeeInfos */
+#rangeeInfos span {
+    color: red;
+    margin-left: 5%;
+}
+
+/*- - - - - T E S T S - - - - -*/
+/* Section pour les tests CSS */
